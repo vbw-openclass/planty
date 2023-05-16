@@ -9,3 +9,34 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: astra-child
 Template: astra
 */
+
+
+/* HEADER */
+
+#masthead .ast-container {
+    padding-right: 0;
+}
+
+#menu-item-18 a{
+    background-color: #DC9F96;
+    color: #FFFFFF;
+    padding-left: 61px;
+    padding-right: 61px;
+}
+
+#menu-item-18 a:hover {
+    background: #C02E44;
+}
+
+/* MEDIA QUERIES HEADER*/
+
+@media screen and (max-width: 768px) {
+    .menu-item-18 a{
+        background-color: #DC9F96;
+        color: #FFFFFF !important;
+    }
+
+    .menu-item-18 a:hover {
+        background: #C02E44 !important;
+    }
+}
