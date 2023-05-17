@@ -42,11 +42,10 @@ Template: astra
 
 
 
-
 /* MEDIA QUERIES HEADER*/
 
 @media screen and (max-width: 768px) {
-    .main-navigation .menu-item-18 a{
+    .menu-item-18 a{
         background-color: #DC9F96;
         color: #FFFFFF !important;
     }
