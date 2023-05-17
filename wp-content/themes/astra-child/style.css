@@ -10,6 +10,13 @@ Text Domain: astra-child
 Template: astra
 */
 
+/* Palette de couleurs / Variables de couleurs */
+
+:root {
+    --commander-color: #DC9F96;
+    --survol-commander-color: #C02E44;
+}
+
 
 /* HEADER */
 
@@ -18,25 +25,38 @@ Template: astra
 }
 
 #menu-item-18 a{
-    background-color: #DC9F96;
+    background-color: var(--commander-color);
     color: #FFFFFF;
     padding-left: 61px;
     padding-right: 61px;
 }
 
 #menu-item-18 a:hover {
-    background: #C02E44;
+    background: var(--survol-commander-color);
 }
+
+#menu-item-19 a:hover {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+
 
 /* MEDIA QUERIES HEADER*/
 
 @media screen and (max-width: 768px) {
-    .menu-item-18 a{
+    .main-navigation .menu-item-18 a{
         background-color: #DC9F96;
         color: #FFFFFF !important;
     }
 
     .menu-item-18 a:hover {
-        background: #C02E44 !important;
+        background: var(--survol-commander-color) !important;
+    }
+
+    .menu-item-19 a:hover {
+        font-weight: 700;
+        font-size: 13px;
     }
 }
