@@ -13,8 +13,9 @@ Template: astra
 /* Palette de couleurs / Variables de couleurs */
 
 :root {
-    --commander-color: #DC9F96;
-    --survol-commander-color: #C02E44;
+    --button-color: #DC9F96;
+    --survol-button-color: #C02E44;
+    --sapin-color: #3B8E46;
 }
 
 
@@ -24,38 +25,85 @@ Template: astra
     padding-right: 0;
 }
 
+#menu-item-18 {
+    order: 2;
+}
+
 #menu-item-18 a{
-    background-color: var(--commander-color);
+    background-color: var(--button-color);
     color: #FFFFFF;
     padding-left: 61px;
     padding-right: 61px;
 }
 
 #menu-item-18 a:hover {
-    background: var(--survol-commander-color);
+    background: var(--survol-button-color);
 }
+
 
 #menu-item-19 a:hover {
     font-weight: 700;
     font-size: 13px;
 }
 
+.lien-admin {
+    display: flex;
+    align-items: center;
+    padding-left: 61px;
+    padding-right: 61px;
+}
 
+.lien-admin a{
+    color: #000000;
+}
+
+.lien-admin a:hover{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+/* PAGE D'ACCUEIL */
+
+.boisson-energisante {
+    border-bottom: 15px solid #E3D9D0;
+    border-radius: 0% 0% 50% 50% / 10% 10% 10% 10%;
+    overflow: hidden;
+}
+
+/* PAGE COMMANDER */
+
+.page-id-15 {
+    background-color: var(--sapin-color);
+}
 
 /* MEDIA QUERIES HEADER*/
 
-@media screen and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1440px) {
+
+    .menu-item-18 {
+        order: 2;
+    }
+
     .menu-item-18 a{
-        background-color: #DC9F96;
+        background-color: var(--button-color);
         color: #FFFFFF !important;
     }
 
     .menu-item-18 a:hover {
-        background: var(--survol-commander-color) !important;
+        background: var(--survol-button-color) !important;
     }
+
 
     .menu-item-19 a:hover {
         font-weight: 700;
         font-size: 13px;
     }
+    
+    .lien-admin {
+        padding-left: 20px;
+    }
+    
+
 }
+

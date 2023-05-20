@@ -23,3 +23,23 @@ function child_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
+
+
+
+
+function is_user_logged($items, $args){
+
+    $menu ='header';
+    $add_menu = array('primary', 'mobile_menu');
+    if(is_user_logged_in() && in_array($args->theme_location, $add_menu))  {
+        
+       $items .= '<li class="lien-admin"> <a href="http://localhost/planty/wp-admin/">Admin </a></li>';
+    }
+    return $items;
+}
+
+
+
+add_filter('wp_nav_menu_items','is_user_logged', 10,2);
+
+?>
