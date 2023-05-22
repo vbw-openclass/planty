@@ -26,20 +26,25 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 
 
 
-
+// Déclaration de la fonction is_user_logged avec deux paramètres : $items et $args
 function is_user_logged($items, $args){
 
     $menu ='header';
+    // Définition du tableau $add_menu contenant les valeurs 'primary' et 'mobile_menu'
     $add_menu = array('primary', 'mobile_menu');
+    // Vérification si un utilisateur est connecté et si la valeur de $args->theme_location est présente dans le tableau $add_menu
     if(is_user_logged_in() && in_array($args->theme_location, $add_menu))  {
         
-       $items .= '<li class="lien-admin"> <a href="http://localhost/planty/wp-admin/">Admin </a></li>';
+    // Ajout d'un élément à la variable $items en utilisant la concaténation de chaînes de caractères, ce qui ajoute le lien Admin au lieu de remplacer le menu existant
+    // L'élément ajouté est un lien vers la page d'administration avec le texte 'Admin'
+       $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"> <a class="menu-link" href="http://localhost/planty/wp-admin/">Admin</a></li>';
     }
     return $items;
 }
 
 
-
+// Ajout du filtre 'wp_nav_menu_items' qui appelle la fonction is_user_logged
+// Le filtre est défini avec une priorité de 10 et 2 arguments (10, 2)
 add_filter('wp_nav_menu_items','is_user_logged', 10,2);
 
 ?>

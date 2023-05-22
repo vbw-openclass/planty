@@ -21,43 +21,42 @@ Template: astra
 
 /* HEADER */
 
+/* Retrait du padding de base */
 #masthead .ast-container {
     padding-right: 0;
 }
 
-#menu-item-18 {
+
+/* Lien Commander */
+.menu-item-18 {
     order: 2;
 }
 
-#menu-item-18 a{
+.main-header-menu .menu-item-18 a{
     background-color: var(--button-color);
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     padding-left: 61px;
     padding-right: 61px;
 }
 
-#menu-item-18 a:hover {
+.menu-item-18 a:hover {
     background: var(--survol-button-color);
 }
 
-
-#menu-item-19 a:hover {
+/* Lien Nous rencontrer */
+.menu-item-19 a:hover {
     font-weight: 700;
     font-size: 13px;
 }
 
-.lien-admin {
-    display: flex;
-    align-items: center;
+/* Lien Admin / HOOK */
+.main-header-menu .menu-item-20 a{
     padding-left: 61px;
     padding-right: 61px;
+
 }
 
-.lien-admin a{
-    color: #000000;
-}
-
-.lien-admin a:hover{
+.menu-item-20 a:hover{
     font-weight: 700;
     font-size: 13px;
 }
@@ -79,31 +78,9 @@ Template: astra
 
 /* MEDIA QUERIES HEADER*/
 
-@media (min-width: 320px) and (max-width: 1440px) {
-
-    .menu-item-18 {
-        order: 2;
-    }
-
-    .menu-item-18 a{
-        background-color: var(--button-color);
-        color: #FFFFFF !important;
-    }
-
-    .menu-item-18 a:hover {
-        background: var(--survol-button-color) !important;
-    }
+@media  (max-width: 1440px) {
 
 
-    .menu-item-19 a:hover {
-        font-weight: 700;
-        font-size: 13px;
-    }
-    
-    .lien-admin {
-        padding-left: 20px;
-    }
-    
 
 }
 
