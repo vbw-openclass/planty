@@ -34,10 +34,12 @@ function is_user_logged($items, $args){
     $add_menu = array('primary', 'mobile_menu');
     // Vérification si un utilisateur est connecté et si la valeur de $args->theme_location est présente dans le tableau $add_menu
     if(is_user_logged_in() && in_array($args->theme_location, $add_menu))  {
+    //Définition d'une variable qui stock l'URL du tableau de bord d'administration WP
+        $admin_url = admin_url();
         
     // Ajout d'un élément à la variable $items en utilisant la concaténation de chaînes de caractères, ce qui ajoute le lien Admin au lieu de remplacer le menu existant
-    // L'élément ajouté est un lien vers la page d'administration avec le texte 'Admin'
-       $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"> <a class="menu-link" href="http://localhost/planty/wp-admin/">Admin</a></li>';
+    // L'élément ajouté est un lien vers la page d'administration avec le texte 'Admin' grâce a esc_url($admin_url) et sécurise l'URL
+       $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"> <a class="menu-link" href="' . esc_url($admin_url) . '">Admin</a></li>';
     }
     return $items;
 }

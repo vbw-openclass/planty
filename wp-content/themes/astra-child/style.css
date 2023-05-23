@@ -70,6 +70,18 @@ Template: astra
     overflow: hidden;
 }
 
+/* PAGE NOUS RENCONTRER */
+
+/* Première section */
+.nous-rencontrer {
+    border-radius: 0% 0% 50% 50% / 10% 10% 15% 15%;
+    overflow: hidden;
+}
+
+/* Contact form 7 */
+
+
+
 /* PAGE COMMANDER */
 
 .page-id-15 {
