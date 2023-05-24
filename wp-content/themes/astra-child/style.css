@@ -80,6 +80,34 @@ Template: astra
 
 /* Contact form 7 */
 
+.form-rencontre {
+
+}
+
+.wpcf7 .wpcf7-form-control-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-rencontre input[type=text], .form-rencontre input[type=email]{
+    width: 380px;
+    height: 71px;
+    border-radius: 7px;
+}
+
+.form-rencontre textarea {
+    width: 380px;
+    height: 237px;
+    border-radius: 7px
+}
+
+
+.wpcf7-submit {
+    margin : auto; 
+    display: block;
+}
 
 
 /* PAGE COMMANDER */
