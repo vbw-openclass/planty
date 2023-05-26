@@ -78,9 +78,9 @@ Template: astra
     overflow: hidden;
 }
 
-/* Contact form 7 */
+/* Formulaire Nous-rencontrer */
 
-.wp-block-contact-form-7-contact-form-selector {
+.form-nous-rencontrer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,6 +109,19 @@ Template: astra
 
 /* PAGE COMMANDER */
 
+.form-commander {
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.form-commander input[type=text], .form-commander input[type=email]{
+    width: 380px;
+    height: 71px;
+    border-radius: 7px;
+}
 
 
 /* MEDIA QUERIES HEADER*/
