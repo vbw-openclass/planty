@@ -195,10 +195,6 @@ input[type=number] {
     margin-top: 40px;
 }
 
-.form-commander, h2 {
-    color: #FFFFFF !important;
-}
-
 
 .form-commander input[type=text], .form-commander input[type=email]{
     width: 100%;
