@@ -39,7 +39,7 @@ function is_user_logged($items, $args){
         
     // Ajout d'un élément à la variable $items en utilisant la concaténation de chaînes de caractères, ce qui ajoute le lien Admin au lieu de remplacer le menu existant
     // L'élément ajouté est un lien vers la page d'administration avec le texte 'Admin' grâce a esc_url($admin_url) et sécurise l'URL
-       $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"> <a class="menu-link" href="' . esc_url($admin_url) . '">Admin</a></li>';
+       $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page admin-link"> <a class="menu-link" href="' . esc_url($admin_url) . '">Admin</a></li>';
     }
     return $items;
 }

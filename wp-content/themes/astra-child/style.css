@@ -44,22 +44,18 @@ Template: astra
 }
 
 /* Lien Nous rencontrer */
-.menu-item-19 a:hover {
+.menu-item-19 a:hover, .admin-link a:hover {
     font-weight: 700;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /* Lien Admin / HOOK */
-.main-header-menu .menu-item-20 a{
+.main-header-menu .admin-link a{
     padding-left: 61px;
     padding-right: 61px;
-
 }
 
-.menu-item-20 a:hover{
-    font-weight: 700;
-    font-size: 13px;
-}
+
 
 
 /* PAGE D'ACCUEIL */
@@ -67,6 +63,11 @@ Template: astra
 .boisson-energisante {
     border-bottom: 15px solid #E3D9D0;
     border-radius: 0% 0% 50% 50% / 10% 10% 10% 10%;
+    overflow: hidden;
+}
+
+.les-gouts {
+    border-radius: 0% 0% 50% 50% / 10% 10% 5% 5%;
     overflow: hidden;
 }
 
@@ -195,8 +196,11 @@ input[type=number] {
     margin-top: 40px;
 }
 
+.conteneur-form, .conteneur-form h2 {
+    color: #FFFFFF;
+}
 
-.form-commander input[type=text], .form-commander input[type=email]{
+.conteneur-form input[type=text], .conteneur-form input[type=email]{
     width: 100%;
     height: 71px;
     border-radius: 7px;
