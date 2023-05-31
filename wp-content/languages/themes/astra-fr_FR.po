@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Astra package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-04-03 20:34:04+0000\n"
+"PO-Revision-Date: 2023-05-22 08:07:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,6 +21,11 @@ msgstr "Astra est un thème rapide, beau et entièrement personnalisable, approp
 #, gp-priority: high
 msgid "Astra"
 msgstr "Astra"
+
+#: inc/metabox/class-astra-meta-boxes.php:351
+#: inc/metabox/class-astra-meta-boxes.php:637
+msgid "Disable Banner Area"
+msgstr "Désactiver la zone de bannière"
 
 #: inc/theme-update/astra-update-functions.php:1103
 msgid "Apple Pay"
@@ -1377,6 +1382,10 @@ msgstr "Épingler au-dessus de l’en-tête"
 msgid "Page Header"
 msgstr "En-tête de page"
 
+#: inc/core/class-astra-admin-settings.php:186
+msgid "Did you know Astra comes with dozens of ready-to-use <a href=\"https://wpastra.com/website-templates/?utm_source=dashboard&utm_medium=free-theme&utm_campaign=starter-templates\" target=\"_blank\">starter templates</a>? Install the Starter Templates plugin to get started."
+msgstr "Saviez-vous qu’Astra est livré avec des douzaines de <a href=\"https://wpastra.com/website-templates/?utm_source=dashboard&utm_medium=free-theme&utm_campaign=starter-templates\" target=\"_blank\">modèles de démarrage</a> prêts à l’emploi ? Installez l’extension « Starter Templates » pour commencer."
+
 #: inc/addons/transparent-header/classes/sections/class-astra-customizer-transparent-header-configs.php:449
 msgid "Text / Icon"
 msgstr "Texte/Icône"
@@ -1658,7 +1667,7 @@ msgstr "Publications similaires"
 
 #: inc/modules/related-posts/customizer/class-astra-related-posts-configs.php:59
 msgid "Enable Related Posts"
-msgstr "Acter les publications similaires"
+msgstr "Activer les publications similaires"
 
 #: searchform.php:26
 msgid "Search for:"
@@ -2288,7 +2297,7 @@ msgstr "Couleur - image d’arrière-plan"
 #: inc/customizer/configurations/builder/footer/class-astra-customizer-footer-builder-configs.php:187
 #: inc/customizer/configurations/builder/footer/class-astra-customizer-footer-builder-configs.php:246
 msgid "Footer Builder"
-msgstr "Constructeur de pied de page"
+msgstr "Pied de page"
 
 #: inc/builder/class-astra-builder-loader.php:93
 #: inc/customizer/configurations/builder/header/class-astra-customizer-header-builder-configs.php:177
@@ -2296,7 +2305,7 @@ msgstr "Constructeur de pied de page"
 #: inc/customizer/configurations/builder/header/class-astra-customizer-header-builder-configs.php:327
 #: inc/customizer/configurations/builder/header/class-astra-customizer-primary-header-configs.php:49
 msgid "Header Builder"
-msgstr "Constructeur d’en-tête"
+msgstr "En-tête"
 
 #: inc/builder/type/header/account/class-astra-header-account-component.php:111
 msgid "Account Woo Navigation"
@@ -2557,7 +2566,7 @@ msgstr "Bordure"
 #: inc/customizer/configurations/layout/class-astra-site-identity-configs.php:336
 #: inc/customizer/extend-custom-controls/build/index.js:1
 msgid "Color"
-msgstr "Couleur"
+msgstr "Couleurs"
 
 #: inc/customizer/configurations/builder/class-astra-builder-base-configuration.php:349
 #: inc/customizer/configurations/colors-background/class-astra-advanced-footer-colors-configs.php:113
@@ -3937,7 +3946,7 @@ msgstr "Réglages"
 
 #: inc/customizer/configurations/layout/class-astra-site-identity-configs.php:272
 msgid "Inline Logo & Site Title"
-msgstr "Logo en ligne & titre du site"
+msgstr "Logo & titre sur la même ligne"
 
 #: inc/customizer/class-astra-customizer-register-sections-panels.php:200
 msgid "Blog"
