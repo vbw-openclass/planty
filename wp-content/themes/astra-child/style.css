@@ -13,8 +13,8 @@ Template: astra
 /* Palette de couleurs / Variables de couleurs */
 
 :root {
-    --button-color: #DC9F96;
-    --survol-button-color: #C02E44;
+    --pink-color: #DC9F96;
+    --red-color: #C02E44;
     --sapin-color: #3B8E46;
 }
 
@@ -33,14 +33,14 @@ Template: astra
 }
 
 .main-header-menu .menu-item-18 a{
-    background-color: var(--button-color);
+    background-color: var(--pink-color) !important;
     color: #FFFFFF !important;
     padding-left: 61px;
     padding-right: 61px;
 }
 
 .menu-item-18 a:hover {
-    background: var(--survol-button-color);
+    background: var(--red-color);
 }
 
 /* Lien Nous rencontrer */
@@ -277,7 +277,23 @@ input[type=number] {
 
 
 @media (max-width: 600px) {
-    /* PAGE D'ACCUEIL -> Ce qu'ils en pensent */
+    /* PAGE D'ACCUEIL -> Titre */
+
+    .boisson-energisante {
+        min-height: 0 !important;
+    }
+
+    h1 {
+        font-size: 25px !important;
+    }
+
+
+    /* Les goûts */
+    .wp-block-cover__inner-container > h3 {
+        font-size: 2.1rem !important;
+    }
+
+    /* Ce qu'ils en pensent */
     .wp-block-columns.is-layout-flex.wp-container-10 {
         padding-right: 10px !important;
         padding-left: 10px !important;
@@ -290,5 +306,24 @@ input[type=number] {
     
     .form-rencontre textarea {
         width: 300px;
+    }
+
+    /* PAGE COMMANDER Livraison */
+    .conteneur-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .seperateur-vertical {
+        border: 2px solid #FFFFFF;
+        height: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .infos-colonne, .delivery-colonne {
+        padding: 0;
+        width: 100%;
+
     }
 }
