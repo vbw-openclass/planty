@@ -226,9 +226,69 @@ input[type=number] {
 
 /* MEDIA QUERIES HEADER*/
 
-@media  (max-width: 1440px) {
+
+/* TABLETTE */
 
 
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* PAGE D'ACCUEIL -> Ce qu'ils en pensent */
+    .wp-block-columns.is-layout-flex.wp-container-10 {
+        display: flex;
+        flex-direction: column;
+        padding-right: 46px !important;
+        padding-left: 46px !important;
+    }
+
+    /* PAGE COMMANDER -> Votre commande */
+    .wp-block-cover__inner-container > h3 {
+        font-size: 2rem !important;
+    }
+
+    .wp-block-heading.has-ast-global-color-5-color.has-text-color + .wp-block-columns.is-layout-flex.wp-container-5 {
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+    }
+
+    /* Livraison */
+    .conteneur-form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .seperateur-vertical {
+        border: 2px solid #FFFFFF;
+        height: 0;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .infos-colonne, .delivery-colonne {
+        padding: 0;
+        width: 90%;
+        margin-left: 40px;
+    }
 
 }
 
+
+
+@media (max-width: 600px) {
+    /* PAGE D'ACCUEIL -> Ce qu'ils en pensent */
+    .wp-block-columns.is-layout-flex.wp-container-10 {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+
+    /* PAGE NOUS RENCONTRER -> Input du formulaire */
+    .form-rencontre input[type=text], .form-rencontre input[type=email]{
+        width: 300px;
+    }
+    
+    .form-rencontre textarea {
+        width: 300px;
+    }
+}
