@@ -40,7 +40,7 @@ Template: astra
 }
 
 .menu-item-18 a:hover {
-    background: var(--red-color);
+    background: var(--red-color) !important;
 }
 
 /* Lien Nous rencontrer */
@@ -190,10 +190,60 @@ input[type=number] {
 
 /* Formulaire Commander */
 
+.panier-quantite {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.panier {
+    width: 25%;
+}
+
+[class^="banniere"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    font-size:30px;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    word-break: break-word;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.banniere-fraise {
+    background-image: url('./img/fraises.png');
+    background-size: cover;
+}
+
+.banniere-pamplemousse {
+    background-image: url('./img/pamplemousse.png');
+    background-size: cover;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.banniere-framboise {
+    background-image: url('./img/framboises.png');
+    background-size: cover;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.banniere-citron {
+    background-image: url('./img/citron.png');
+    background-size: cover;
+}
+
 .conteneur-form {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .conteneur-form, .conteneur-form h2 {
@@ -210,7 +260,6 @@ input[type=number] {
     width: 48%;
     padding-right: 50px;
 }
-
 
 .delivery-colonne {
     width: 48%;
@@ -251,11 +300,11 @@ input[type=number] {
         flex-wrap: nowrap !important;
     }
 
+
     /* Livraison */
     .conteneur-form {
         display: flex;
         flex-direction: column;
-
     }
 
     .seperateur-vertical {
