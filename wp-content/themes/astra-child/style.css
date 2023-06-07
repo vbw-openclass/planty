@@ -188,7 +188,7 @@ input[type=number] {
     appearance: none;
 }
 
-/* Formulaire Commander */
+/* Bannières des goûts */
 
 .panier-quantite {
     display: flex;
@@ -240,6 +240,13 @@ input[type=number] {
     background-size: cover;
 }
 
+.separateur-horizontal {
+    border-top: 1px solid #FFFFFF;
+    height: 0;
+}
+
+/* Informations du client */
+
 .conteneur-form {
     display: flex;
     justify-content: space-between;
@@ -266,9 +273,13 @@ input[type=number] {
     padding-left: 50px;
 }
 
-.seperateur-vertical {
+.separateur-vertical {
     border-left: 1px solid #FFFFFF;
     height: 430px;
+}
+
+.precommande {
+    margin-bottom: 60px;
 }
 
 
@@ -293,11 +304,23 @@ input[type=number] {
         font-size: 2rem !important;
     }
 
-    .wp-block-heading.has-ast-global-color-5-color.has-text-color + .wp-block-columns.is-layout-flex.wp-container-5 {
-        width: 90% !important;
+    .titre-commande {
+        margin-left: 80px !important;
+    }
+
+    /* Bannière */ 
+    .panier-quantite {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap !important;
+        align-items: center;
+    }
+    
+    .panier {
+        width: 80%;
+    }
+
+    .separateur-horizontal {
+        border-top: 2px solid #FFFFFF;
     }
 
 
@@ -307,8 +330,8 @@ input[type=number] {
         flex-direction: column;
     }
 
-    .seperateur-vertical {
-        border: 2px solid #FFFFFF;
+    .separateur-vertical {
+        border-top: 2px solid #FFFFFF;
         height: 0;
         width: 100%;
         margin-bottom: 20px;
@@ -358,13 +381,40 @@ input[type=number] {
     }
 
     /* PAGE COMMANDER Livraison */
+
+    /* Bannière */ 
+
+    .banniere-pamplemousse {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .banniere-framboise {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+
+    .panier-quantite {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .panier {
+        width: 100%;
+    }
+    
+    .separateur-horizontal {
+        border-top: 2px solid #FFFFFF;
+    }
+
+
     .conteneur-form {
         display: flex;
         flex-direction: column;
     }
     
-    .seperateur-vertical {
-        border: 2px solid #FFFFFF;
+    .separateur-vertical {
+        border-top: 2px solid #FFFFFF;
         height: 0;
         width: 100%;
         margin-bottom: 20px;
